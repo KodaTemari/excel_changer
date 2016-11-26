@@ -6,4 +6,5 @@ class RecipeController < ApplicationController
     @ingredient = params[:ingredient]
     @making = params[:making]
   end
+
 end
