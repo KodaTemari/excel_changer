@@ -11,16 +11,16 @@
       end
     %><%= ingredient.chomp! %></textarea>
   </div>
-    <div class="form-group">
-      <label class="control-label">作り方</label>
-      <textarea name="making" class="form-control" rows="10"><%
-        lines = @making.split("\r\n")
-        making = ""
-        lines.each do |line|
-          making += "<li>#{line[0]}</li>\r\n"
-        end
-      %><%= making.chomp! %></textarea>
-    </div>
+  <div class="form-group">
+    <label class="control-label">作り方</label>
+    <textarea name="making" class="form-control" rows="10"><%
+      lines = @making.split("\r\n")
+      making = ""
+      lines.each do |line|
+        making += "<li>#{lines[0]}</li>\r\n"
+      end
+    %><%= making.chomp! %></textarea>
+  </div>
   <div class="form-group">
     <a href="#" class="btn btn-success btn-lg" onclick="javascript:window.history.back(-1);return false;">戻る</a>
   </div>
