@@ -17,7 +17,7 @@
       lines = @making.split("\r\n")
       making = ""
       lines.each do |line|
-        making += "<li>#{lines[0]}</li>\r\n"
+        making += "<li>#{line}</li>\r\n"
       end
     %><%= making.chomp! %></textarea>
   </div>
